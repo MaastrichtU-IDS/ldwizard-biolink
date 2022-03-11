@@ -1,5 +1,6 @@
 import WizardConfig, { PrefixEntry } from "@netwerkdigitaalerfgoed/ldwizard/types/WizardConfig";
-import RefineLangIsoToUri from "./refineLangIsoToUri";
+import refineLabelToCurie from "./refineLabelToCurie";
+import refineCurieToPrefCurie from "./refineCurieToPrefCurie";
 // @ts-ignore
 const logo = require("./biolink-logo.png").default;
 // @ts-ignore
@@ -22,7 +23,8 @@ const wizardConfig: WizardConfig = {
   predicateConfig: {method:"sparql", endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-biolink"},
 
   columnRefinements: [
-    RefineLangIsoToUri,
+    refineLabelToCurie,
+    refineCurieToPrefCurie,
   ],
 
   getAllowedPrefixes: async () => {
