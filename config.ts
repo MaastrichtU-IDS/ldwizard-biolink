@@ -8,15 +8,15 @@ const homepage = require("./homepage.md");
 const wizardConfig: WizardConfig = {
   appName: "LDWizard - Convert biomedical data to the BioLink model",
   defaultBaseIri: "https://w3id.org/umids/wizard/",
-  primaryColor: "#9ea939", // light green
-  secondaryColor: "#0c7e86", // blue green
+  primaryColor: "#0c7e86", // blue green
+  secondaryColor: "#9ea939", // light green
   homepageMarkdown: homepage,
   publishOrder: ["download"],
   icon: logo,
   //favIcon: logo,
   dataplatformLink: "https://yasgui.triply.cc/?endpoint=https://graphdb.dumontierlab.com/repositories/ldwizard-biolink",
-  repositoryLink: "https://github.com/vemonet/ldwizard-biolink",
-  documentationLink: "https://github.com/vemonet/ldwizard-biolink",
+  repositoryLink: "https://github.com/MaastrichtU-IDS/ldwizard-biolink",
+  documentationLink: "https://github.com/MaastrichtU-IDS/ldwizard-biolink",
 
   classConfig: {method:"sparql", endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-biolink"},
   predicateConfig: {method:"sparql", endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-biolink"},
