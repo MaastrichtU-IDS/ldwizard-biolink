@@ -1,6 +1,6 @@
 version: '3'
 services:
-  ldwizard:
+  ldwizard-biolink:
     # image: ghcr.io/maastrichtu-ids/ldwizard-biolink:latest
     build:
       context: ../
