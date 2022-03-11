@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ldwizard:
+    # image: ghcr.io/maastrichtu-ids/ldwizard-biolink:latest
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args: 
+        CONFIG_FILE: ./config.ts
+
+    environment:
+      - VIRTUAL_HOST=biolink.wizard.semanticscience.org
+      - LETSENCRYPT_HOST=biolink.wizard.semanticscience.org
+      - VIRTUAL_PORT=80
